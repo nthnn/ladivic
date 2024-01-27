@@ -1,6 +1,6 @@
 ## ladivic
 
-Ladivic is a C++ library designed to provide system-level thread- and fail-safe functions. It offers various functionalities related to asynchronous operations, atomic operations, input/output operations, inter-process communication (IPC), memory management, and system information retrieval. The library aims to simplify system-level programming tasks by providing robust and reliable functions that ensure thread safety and error handling.
+Ladivic is a C++ library designed to provide system-level thread- and fail-safe functions. It offers various functionalities related to asynchronous operations, atomic operations, input/output operations, inter-process communication (IPC), memory management, and system information retrieval. The library aims to simplify system-level programming tasks by providing robust and reliable functions that ensure thread safety and error handling. Hence, Ladivic stands as a versatile and indispensable asset for tackling complex system-level challenges with confidence and efficiency.
 
 ```cpp
 #include <ldvc_mem.hpp>
@@ -20,7 +20,7 @@ i32 main() {
         std::cout << i32_array[i] << " ";
     cout << endl;
 }
-``
+```
 
 ## Features
 
@@ -55,7 +55,7 @@ To incorporate Ladivic into your C++ project, follow these simple steps:
 1. Clone the Ladivic repository to your local machine:
 
 ```bash
-git clone https://github.com/your_username/ladivic.git
+git clone https://github.com/nthnn/ladivic.git
 ```
 
 2. Include the necessary header files in your C++ code:
@@ -79,3 +79,17 @@ qrepo run build
 ```
 
 Just make sure you have [Qrepo](https://github.com/nthnn/Qrepo) and [CMake](https://cmake.org) installed on your system.
+
+## Contributing
+
+Contributions to Ladivic are highly encouraged and appreciated! To contribute new features, bug fixes, or enhancements, please adhere to the following guidelines:
+
+1. Fork the Ladivic repository.
+2. Create a new branch for your changes: `git checkout -b feature-name`.
+3. Implement your changes and commit them: `git commit -m "Added new feature"`.
+4. Push your changes to the branch: `git push origin feature-name`.
+5. Submit a pull request for review and inclusion.
+
+## License
+
+Ladivic is distributed under the GNU General Public License v3.0. For further details, refer to the [LICENSE](https://github.com/nthnn/ladivic/tree/main/LICENSE) file.
