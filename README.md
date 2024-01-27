@@ -1,5 +1,8 @@
 ## ladivic
 
+![Build Test](https://github.com/nthnn/ladivic/actions/workflows/build_test.yml/badge.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/nthnn/ladivic?logo=git&label=Repository%20Size)
+
 Ladivic is a C++ library designed to provide system-level thread- and fail-safe functions. It offers various functionalities related to asynchronous operations, atomic operations, input/output operations, inter-process communication (IPC), memory management, and system information retrieval. The library aims to simplify system-level programming tasks by providing robust and reliable functions that ensure thread safety and error handling. Hence, Ladivic stands as a versatile and indispensable asset for tackling complex system-level challenges with confidence and efficiency.
 
 ```cpp
