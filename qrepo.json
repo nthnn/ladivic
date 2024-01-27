@@ -1,0 +1,19 @@
+{
+	"name": "ladivic",
+	"author": "nthnn",
+	"version": "v0.0.1",
+	"description": "C++ library designed to provide system-level thread safety and fail-safe functions.",
+	"git": "https://github.com/nthnn/ladivic",
+	"scripts": {
+		"build": [
+			"qrepo run clean",
+			"cd dist",
+			"cmake ..",
+			"cmake --build ."
+		],
+		"clean": [
+			"rm -rf dist",
+			"mkdir -p dist"
+		]
+	}
+}
