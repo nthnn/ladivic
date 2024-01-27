@@ -31,3 +31,17 @@ bool ldvc_file_exists(const string& folder_path) {
 bool ldvc_create_folder(const string& folder_path, u16 mode) {
     return mkdir(folder_path.c_str(), mode) == 0;
 }
+
+bool ldvc_delete_file(string file_path) {
+    return std::remove(file_path.c_str()) == 0;
+}
+
+bool ldvc_delete_folder(string folder_path) {
+    try {
+        std::filesystem::remove_all(folder_path);
+        return true;
+    }
+    catch (const std::filesystem::filesystem_error& ex) { }
+
+    return false;
+}

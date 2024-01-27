@@ -128,4 +128,30 @@ bool ldvc_file_exists(const string& folder_path);
  */
 bool ldvc_create_folder(const string& folder_path, u16 mode);
 
+/**
+ * 
+ * @brief Deletes a file specified by its path.
+ *
+ * This function deletes the file located at the specified file path.
+ *
+ * @param file_path The path to the file to be deleted.
+ * 
+ * @return true if the file is successfully deleted, false otherwise.
+ * 
+ */
+bool ldvc_delete_file(string file_path);
+
+/**
+ * 
+ * @brief Deletes a folder specified by its path.
+ *
+ * This function deletes the folder located at the specified folder path.
+ *
+ * @param folder_path The path to the folder to be deleted.
+ * 
+ * @return true if the folder is successfully deleted, false otherwise.
+ * 
+ */
+bool ldvc_delete_folder(string folder_path);
+
 #endif
