@@ -36,6 +36,7 @@
 #ifndef LDVC_IPC_HPP
 #define LDVC_IPC_HPP
 
+#include <mutex>
 #include <sys/ipc.h>
 #include <sys/shm.h>
 #include <ldvc_type.hpp>
