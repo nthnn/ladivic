@@ -23,6 +23,7 @@
 
 #ifdef __linux__
 #include <sys/sysinfo.h>
+#include <sys/statvfs.h>
 #elif __APPLE__
 #include <sys/types.h>
 #include <sys/sysctl.h>
