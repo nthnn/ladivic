@@ -37,6 +37,7 @@
 #define LDVC_ASYNC_HPP
 
 #include <future>
+#include <functional>
 
 /**
  * 
