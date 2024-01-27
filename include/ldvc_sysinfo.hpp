@@ -75,4 +75,17 @@ u64 ldvc_total_memory();
  */
 u64 ldvc_disk_space();
 
+/**
+ * 
+ * @brief Retrieves the number of CPU cores available on the system.
+ *
+ * This function queries the system to determine the number of CPU cores
+ * available for processing. It provides valuable information for tasks
+ * such as workload distribution and parallel processing.
+ *
+ * @return The number of CPU cores available on the system.
+ * 
+ */
+u32 ldvc_cpu_cores();
+
 #endif

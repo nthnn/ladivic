@@ -31,6 +31,7 @@
 #endif
 
 #include <string>
+#include <thread>
 #include <ldvc_sysinfo.hpp>
 
 string ldvc_cpu_info() {
@@ -78,4 +79,8 @@ u64 ldvc_disk_space() {
 #else
     return 0;
 #endif
+}
+
+u32 ldvc_cpu_cores() {
+    return std::thread::hardware_concurrency();
 }
