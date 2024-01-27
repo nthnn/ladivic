@@ -2,7 +2,7 @@
 	"name": "ladivic",
 	"author": "nthnn",
 	"version": "v0.0.1",
-	"description": "C++ library designed to provide system-level thread safety and fail-safe functions.",
+	"description": "C++ library designed to provide system-level thread- and fail-safe functions with concurrency, atomic, file I/O, IPC, memory management, and system information retrieval functionalities.",
 	"git": "https://github.com/nthnn/ladivic",
 	"scripts": {
 		"build": [
