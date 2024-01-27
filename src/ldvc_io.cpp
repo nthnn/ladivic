@@ -22,6 +22,7 @@
  */
 
 #include <ldvc_io.hpp>
+#include <filesystem>
 
 bool ldvc_file_exists(const string& folder_path) {
     std::ifstream folder_check(folder_path);
@@ -38,7 +39,8 @@ bool ldvc_delete_file(string file_path) {
 
 bool ldvc_delete_folder(string folder_path) {
     try {
-        std::filesystem::remove_all(folder_path);
+        std::filesystem::path path(folder_path.c_str());
+        std::filesystem::remove_all(path);
         return true;
     }
     catch (const std::filesystem::filesystem_error& ex) { }
