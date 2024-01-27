@@ -129,6 +129,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ae9120385193e345a6d52a622c0a589e2" id="r_ae9120385193e345a6d52a622c0a589e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9120385193e345a6d52a622c0a589e2">ldvc_create_folder</a> (<a class="el" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">const</a> <a class="el" href="ldvc__type_8hpp.html#aca454f84dd198a937af6499dd758aa3d">string</a> &amp;<a class="el" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">folder_path</a>, u16 <a class="el" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">mode</a>)</td></tr>
 <tr class="memdesc:ae9120385193e345a6d52a622c0a589e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a folder with the specified permissions.  <br /></td></tr>
 <tr class="separator:ae9120385193e345a6d52a622c0a589e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9973c6bbb8e3a379c90590ff934ce5f9" id="r_a9973c6bbb8e3a379c90590ff934ce5f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9973c6bbb8e3a379c90590ff934ce5f9">ldvc_delete_file</a> (<a class="el" href="ldvc__type_8hpp.html#aca454f84dd198a937af6499dd758aa3d">string</a> <a class="el" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">file_path</a>)</td></tr>
+<tr class="memdesc:a9973c6bbb8e3a379c90590ff934ce5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a file specified by its path.  <br /></td></tr>
+<tr class="separator:a9973c6bbb8e3a379c90590ff934ce5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5527e8df29457c3f8fa055075368d0" id="r_afe5527e8df29457c3f8fa055075368d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe5527e8df29457c3f8fa055075368d0">ldvc_delete_folder</a> (<a class="el" href="ldvc__type_8hpp.html#aca454f84dd198a937af6499dd758aa3d">string</a> <a class="el" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">folder_path</a>)</td></tr>
+<tr class="memdesc:afe5527e8df29457c3f8fa055075368d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a folder specified by its path.  <br /></td></tr>
+<tr class="separator:afe5527e8df29457c3f8fa055075368d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides utilities for file input/output operations in C++. </p>
@@ -166,6 +172,60 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True if the folder was created successfully, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a9973c6bbb8e3a379c90590ff934ce5f9" name="a9973c6bbb8e3a379c90590ff934ce5f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9973c6bbb8e3a379c90590ff934ce5f9">&#9670;&#160;</a></span>ldvc_delete_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">bool</a> ldvc_delete_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ldvc__type_8hpp.html#aca454f84dd198a937af6499dd758aa3d">string</a></td>          <td class="paramname"><span class="paramname"><em>file_path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes a file specified by its path. </p>
+<p>This function deletes the file located at the specified file path.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_path</td><td>The path to the file to be deleted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the file is successfully deleted, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="afe5527e8df29457c3f8fa055075368d0" name="afe5527e8df29457c3f8fa055075368d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5527e8df29457c3f8fa055075368d0">&#9670;&#160;</a></span>ldvc_delete_folder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">bool</a> ldvc_delete_folder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ldvc__type_8hpp.html#aca454f84dd198a937af6499dd758aa3d">string</a></td>          <td class="paramname"><span class="paramname"><em>folder_path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes a folder specified by its path. </p>
+<p>This function deletes the folder located at the specified folder path.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">folder_path</td><td>The path to the folder to be deleted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the folder is successfully deleted, false otherwise. </dd></dl>
 
 </div>
 </div>

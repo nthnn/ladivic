@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ladivic: Main Page</title>
+<title>ladivic: ladivic</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,10 +91,94 @@ $(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">ladivic Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">ladivic </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a> Ladivic is a C++ library designed to provide system-level thread- and fail-safe functions. It offers various functionalities related to asynchronous operations, atomic operations, input/output operations, inter-process communication (IPC), memory management, and system information retrieval. The library aims to simplify system-level programming tasks by providing robust and reliable functions that ensure thread safety and error handling. Hence, Ladivic stands as a versatile and indispensable asset for tackling complex system-level challenges with confidence and efficiency.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ldvc__mem_8hpp.html">ldvc_mem.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ldvc__type_8hpp.html">ldvc_type.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">std</a>;</div>
+<div class="line"> </div>
+<div class="line">i32 <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">main</a>() {</div>
+<div class="line">    i32* <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i32_array</a> = <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">ldvc_malloc&lt;i32&gt;</a>(5);</div>
+<div class="line">    <span class="keywordflow">for</span>(<a class="code hl_typedef" href="ldvc__type_8hpp.html#a8a1acd2f98c9e2cb3db422251e294037">usize</a> <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i</a> = 0; <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i</a> &lt; 5; ++<a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i</a>)</div>
+<div class="line">        <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i32_array</a>[<a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i</a>] = <span class="keyword">static_cast&lt;</span>i32<span class="keyword">&gt;</span>(<a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i</a> * 10);</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">cout</a> &lt;&lt; <span class="stringliteral">&quot;Original Array: &quot;</span>;</div>
+<div class="line">    <span class="keywordflow">for</span>(<a class="code hl_typedef" href="ldvc__type_8hpp.html#a8a1acd2f98c9e2cb3db422251e294037">usize</a> <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i</a> = 0; <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i</a> &lt; 5; ++<a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i</a>)</div>
+<div class="line">        std::cout &lt;&lt; <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i32_array</a>[<a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">i</a>] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line">    <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">cout</a> &lt;&lt; <a class="code hl_function" href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">endl</a>;</div>
+<div class="line">}</div>
+<div class="ttc" id="aldvc__mem_8hpp_html"><div class="ttname"><a href="ldvc__mem_8hpp.html">ldvc_mem.hpp</a></div><div class="ttdoc">Memory management utilities for dynamic allocation and deallocation.</div></div>
+<div class="ttc" id="aldvc__mem_8hpp_html_a87c1170cbf2faedc8050f9195b5e07f4"><div class="ttname"><a href="ldvc__mem_8hpp.html#a87c1170cbf2faedc8050f9195b5e07f4">ldvc_malloc</a></div><div class="ttdeci">T * ldvc_malloc(usize size)</div><div class="ttdoc">Allocates memory for an array of elements.</div><div class="ttdef"><b>Definition</b> <a href="ldvc__mem_8hpp_source.html#l00061">ldvc_mem.hpp:61</a></div></div>
+<div class="ttc" id="aldvc__type_8hpp_html"><div class="ttname"><a href="ldvc__type_8hpp.html">ldvc_type.hpp</a></div><div class="ttdoc">Defines common types used throughout the library.</div></div>
+<div class="ttc" id="aldvc__type_8hpp_html_a8a1acd2f98c9e2cb3db422251e294037"><div class="ttname"><a href="ldvc__type_8hpp.html#a8a1acd2f98c9e2cb3db422251e294037">usize</a></div><div class="ttdeci">size_t usize</div><div class="ttdoc">Unsigned size type.</div><div class="ttdef"><b>Definition</b> <a href="ldvc__type_8hpp_source.html#l00063">ldvc_type.hpp:63</a></div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md1"></a>
+Features</h1>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Asynchronous Operations</h2>
+<p>Ladivic facilitates seamless execution of asynchronous tasks with its suite of functions designed to handle concurrency elegantly. Developers can leverage <code>ldvc_async_execute</code> to execute functions asynchronously, providing a future object for result retrieval. Additionally, tasks can be scheduled with specified delays or timeouts using <code>ldvc_async_execute_with_delay</code> and <code>ldvc_async_execute_with_timeout</code>, enabling precise control over task execution in multithreaded environments.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Atomic Operations</h2>
+<p>Thread safety is paramount in system-level programming, and Ladivic delivers robust atomic operations to ensure data integrity in concurrent scenarios. With functions for atomic increment, decrement, exchange, load, store, and bitwise operations (AND, OR, XOR), developers can manipulate variables atomically with ease, safeguarding against race conditions and data corruption.</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Input/Output Operations</h2>
+<p>Efficient handling of input/output operations is critical for system-level applications, and Ladivic streamlines this process with its input/output module. Developers can effortlessly read and write data to files using <code><a class="el" href="ldvc__io_8hpp.html" title="Provides utilities for file input/output operations in C++.">ldvc_io.hpp</a></code>, with additional support for checking file existence and creating folders seamlessly, enhancing file management capabilities in system-level applications.</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Inter-Process Communication (IPC)</h2>
+<p>Facilitating communication between processes is essential for building robust system-level applications, and Ladivic simplifies this process with its IPC module. By providing functions for creating, attaching, detaching, and destroying shared memory segments, Ladivic empowers developers to implement efficient inter-process communication mechanisms, enabling seamless data exchange and synchronization between processes.</p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Memory Management</h2>
+<p>Effective memory management is fundamental for optimizing system-level applications, and Ladivic offers powerful memory management functionalities to address this need. Developers can safely allocate and deallocate memory using thread-safe functions in the <code><a class="el" href="ldvc__mem_8hpp.html" title="Memory management utilities for dynamic allocation and deallocation.">ldvc_mem.hpp</a></code> module, ensuring efficient utilization of system resources and minimizing memory-related issues.</p>
+<h2><a class="anchor" id="autotoc_md7"></a>
+System Information Retrieval</h2>
+<p>Accessing essential system information is vital for system-level applications, and Ladivic simplifies this process with its system information retrieval module. Developers can retrieve critical system information such as CPU details, total memory, and disk space using functions in the <code><a class="el" href="ldvc__sysinfo_8hpp.html" title="Provides utilities for retrieving system information.">ldvc_sysinfo.hpp</a></code> module, enabling comprehensive system monitoring and analysis capabilities.</p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Installation</h1>
+<p>To incorporate Ladivic into your C++ project, follow these simple steps:</p>
+<ol type="1">
+<li>Clone the Ladivic repository to your local machine:</li>
+</ol>
+<div class="fragment"><div class="line">git clone https://github.com/nthnn/ladivic.git</div>
+</div><!-- fragment --><ol type="1">
+<li>Include the necessary header files in your C++ code:</li>
+</ol>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ldvc__async_8hpp.html">ldvc_async.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ldvc__atomic_8hpp.html">ldvc_atomic.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ldvc__io_8hpp.html">ldvc_io.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ldvc__ipc_8hpp.html">ldvc_ipc.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ldvc__mem_8hpp.html">ldvc_mem.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ldvc__sysinfo_8hpp.html">ldvc_sysinfo.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="ldvc__type_8hpp.html">ldvc_type.hpp</a>&quot;</span></div>
+<div class="ttc" id="aldvc__async_8hpp_html"><div class="ttname"><a href="ldvc__async_8hpp.html">ldvc_async.hpp</a></div><div class="ttdoc">Provides utilities for asynchronous execution in C++.</div></div>
+<div class="ttc" id="aldvc__atomic_8hpp_html"><div class="ttname"><a href="ldvc__atomic_8hpp.html">ldvc_atomic.hpp</a></div><div class="ttdoc">Provides utilities for atomic operations with mutex protection in C++.</div></div>
+<div class="ttc" id="aldvc__io_8hpp_html"><div class="ttname"><a href="ldvc__io_8hpp.html">ldvc_io.hpp</a></div><div class="ttdoc">Provides utilities for file input/output operations in C++.</div></div>
+<div class="ttc" id="aldvc__ipc_8hpp_html"><div class="ttname"><a href="ldvc__ipc_8hpp.html">ldvc_ipc.hpp</a></div><div class="ttdoc">Provides utilities for Inter-Process Communication (IPC) using shared memory.</div></div>
+<div class="ttc" id="aldvc__sysinfo_8hpp_html"><div class="ttname"><a href="ldvc__sysinfo_8hpp.html">ldvc_sysinfo.hpp</a></div><div class="ttdoc">Provides utilities for retrieving system information.</div></div>
+</div><!-- fragment --><ol type="1">
+<li>During compilation, ensure the Ladivic library is linked to your project.</li>
+</ol>
+<p>Or, you can compile the [examples](examples) by:</p>
+<div class="fragment"><div class="line">qrepo run build</div>
+</div><!-- fragment --><p>Just make sure you have <a href="https://github.com/nthnn/Qrepo">Qrepo</a> and <a href="https://cmake.org">CMake</a> installed on your system.</p>
+<h1><a class="anchor" id="autotoc_md9"></a>
+Contributing</h1>
+<p>Contributions to Ladivic are highly encouraged and appreciated! To contribute new features, bug fixes, or enhancements, please adhere to the following guidelines:</p>
+<ol type="1">
+<li>Fork the Ladivic repository.</li>
+<li>Create a new branch for your changes: <code>git checkout -b feature-name</code>.</li>
+<li>Implement your changes and commit them: <code>git commit -m "Added new feature"</code>.</li>
+<li>Push your changes to the branch: <code>git push origin feature-name</code>.</li>
+<li>Submit a pull request for review and inclusion.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md10"></a>
+License</h1>
+<p>Ladivic is distributed under the GNU General Public License v3.0. For further details, refer to the <a href="https://github.com/nthnn/ladivic/tree/main/LICENSE">LICENSE</a> file. </p>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -25,7 +25,17 @@
 var NAVTREE =
 [
   [ "ladivic", "index.html", [
-    [ "ladivic", "md_README.html", null ],
+    [ "Features", "index.html#autotoc_md1", [
+      [ "Asynchronous Operations", "index.html#autotoc_md2", null ],
+      [ "Atomic Operations", "index.html#autotoc_md3", null ],
+      [ "Input/Output Operations", "index.html#autotoc_md4", null ],
+      [ "Inter-Process Communication (IPC)", "index.html#autotoc_md5", null ],
+      [ "Memory Management", "index.html#autotoc_md6", null ],
+      [ "System Information Retrieval", "index.html#autotoc_md7", null ]
+    ] ],
+    [ "Installation", "index.html#autotoc_md8", null ],
+    [ "Contributing", "index.html#autotoc_md9", null ],
+    [ "License", "index.html#autotoc_md10", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
