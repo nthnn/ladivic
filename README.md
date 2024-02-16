@@ -53,6 +53,17 @@ Accessing essential system information is vital for system-level applications, a
 
 ## Installation
 
+On GNU/Linux systems, you can simply change the working directory to ladivic, type the following to your terminal:
+
+```bash
+sudo chmod +x install.sh
+sudo ./install.sh
+```
+
+This will install the ladivic header files to the header path.
+
+---
+
 To incorporate Ladivic into your C++ project, follow these simple steps:
 
 1. Clone the Ladivic repository to your local machine:
